@@ -47,7 +47,7 @@ Projeto de IoT que permite monitorar o **status e a localização de motocicleta
 
 ✅ Node-RED instalado na sua máquina (https://nodered.org/docs/getting-started/)
 
-✅ Paleta node-red-dashboard instalada no Node-RED
+✅ Paleta node-red-dashboard instalada no Node-RED (http://xxx.xxx.xx.x:1880/ui | atualizar com IP da máquina)
 
 ✅ Rede Wi-Fi local (ESP32 físico precisa estar na mesma rede que o Node-RED)
 
