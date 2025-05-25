@@ -13,7 +13,7 @@ Projeto de IoT que permite monitorar o **status e a localização de motocicleta
 
 - 🔍 Identificação de motocicletas por checkpoint
 - 📡 Envio de dados via **HTTP POST**
-- 🖥️ Visualização em tempo real no Dashboard:
+- 🖥️ Visualização em tempo real no dashboard:
   - ✔️ ID da moto
   - ✔️ Status
   - ✔️ Localização
@@ -24,7 +24,7 @@ Projeto de IoT que permite monitorar o **status e a localização de motocicleta
 
 ## 🛠️ Tecnologias e Ferramentas
 
-- ESP32 (Microcontrolador)
+- ESP32 (microcontrolador)
 - Simulador Wokwi
 - Node-RED
 - Node-RED Dashboard
@@ -45,7 +45,7 @@ Projeto de IoT que permite monitorar o **status e a localização de motocicleta
 
 ## 🔌 Requisitos
 
-✅ Node-RED instalado na sua máquina (https://nodered.org/docs/getting-started/)
+✅ Node-RED instalado na máquina (https://nodered.org/docs/getting-started/)
 
 ✅ Paleta node-red-dashboard instalada no Node-RED (http://xxx.xxx.xx.x:1880/ui | atualizar com IP da máquina)
 
