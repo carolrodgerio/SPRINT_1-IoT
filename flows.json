@@ -1,0 +1,115 @@
+[
+    {
+        "id": "4b4137fe0b98e5f4",
+        "type": "tab",
+        "label": "motthru",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "99b1942cad30dad4",
+        "type": "http in",
+        "z": "4b4137fe0b98e5f4",
+        "name": "",
+        "url": "/motthru",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "362bcc7386663180"
+            ]
+        ]
+    },
+    {
+        "id": "362bcc7386663180",
+        "type": "json",
+        "z": "4b4137fe0b98e5f4",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 430,
+        "y": 200,
+        "wires": [
+            [
+                "80b380dc2b528a77"
+            ]
+        ]
+    },
+    {
+        "id": "80b380dc2b528a77",
+        "type": "function",
+        "z": "4b4137fe0b98e5f4",
+        "name": "function 1",
+        "func": "msg.payload = {\n    moto: msg.payload.id_moto,\n    status: msg.payload.status,\n    local: msg.payload.localizacao,\n    hora: new Date().toLocaleTimeString()\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 200,
+        "wires": [
+            [
+                "67960f2afc31468a",
+                "6b9e76e5017adfaa"
+            ]
+        ]
+    },
+    {
+        "id": "6b9e76e5017adfaa",
+        "type": "http response",
+        "z": "4b4137fe0b98e5f4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 810,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "67960f2afc31468a",
+        "type": "ui_text",
+        "z": "4b4137fe0b98e5f4",
+        "group": "7cf1bb57b3bc0c13",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Motthru",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 810,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7cf1bb57b3bc0c13",
+        "type": "ui_group",
+        "name": "Motos | Motthru",
+        "tab": "5aa5eca19f1ef2de",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5aa5eca19f1ef2de",
+        "type": "ui_tab",
+        "name": "Motthru",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
